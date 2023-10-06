@@ -17,6 +17,7 @@ import UserProfile from './user/UserMain/UserProfile';
 import Fundraiser from './user/Fundraiser/Fundraiser';
 import FindSponsor from './user/Sponsor/FindSponsor';
 import ScholarshipCalculator from './user/AidCalculator/ScholarshipCalculator';
+import ApplicationTracker from './user/ApplicationTracker/ApplicationTracker';
 
 
 import Analytics from './admin/Analytics';
@@ -44,6 +45,7 @@ function App() {
         <Route path='/fundraiser' element={<Fundraiser />} />
         <Route path='/find-scholarship' element={<FindSponsor />} />
         <Route path='/aid-calculator' element={<ScholarshipCalculator />} />
+        <Route path='/application-tracker' element={<ApplicationTracker />} />
 
 
         <Route path='/analytics' element={<Analytics />} />
