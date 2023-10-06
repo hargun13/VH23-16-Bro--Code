@@ -27,6 +27,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import PeopleIcon from '@mui/icons-material/People';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import ChecklistIcon from '@mui/icons-material/Checklist';
+import SchoolIcon from '@mui/icons-material/School';
 //image
 import logo from "../login_signup/edfund.io.png"
 
@@ -204,6 +205,14 @@ export default function Sidebar({setUser}) {
                     </ListItem>
 
                     <ListItem className=''>
+                      <Link to="/education">
+                        <Button style={{ color: 'black' }}>
+                          <CastForEducationIcon className='mr-3'/>Education
+                        </Button>
+                      </Link>
+                    </ListItem>
+
+                    <ListItem className=''>
                       <Link to="/scholarships">
                         <Button style={{ color: 'black' }}>
                           <AccountBalanceIcon className='mr-3'/>Scholarships
@@ -212,24 +221,23 @@ export default function Sidebar({setUser}) {
                     </ListItem>
                   </div>
                 ) : (
-                  <ListItem className=''>
-                    <Link to="/create-scholarship">
-                        <Button style={{ color: 'black' }}>
-                        <AttachMoneyIcon className='mr-3'/>Create a Scholarship
-                        </Button>
-                    </Link>
-                  </ListItem>
+                  <div>
+                    <ListItem className=''>
+                      <Link to="/create-scholarship">
+                          <Button style={{ color: 'black' }}>
+                          <AttachMoneyIcon className='mr-3'/>Create Scholarship
+                          </Button>
+                      </Link>
+                    </ListItem>
+                    <ListItem className=''>
+                      <Link to="/fund-students">
+                          <Button style={{ color: 'black' }}>
+                          <SchoolIcon className='mr-3'/>Fund Students
+                          </Button>
+                      </Link>
+                    </ListItem>
+                  </div>
                 )}
-
-                <ListItem className=''>
-                  <Link to="/education">
-                    <Button style={{ color: 'black' }}>
-                      <CastForEducationIcon className='mr-3'/>Education
-                    </Button>
-                  </Link>
-                </ListItem>
-
-                
 
                 <ListItem className=''>
                   <Link to="/schemes">   
@@ -279,6 +287,29 @@ export default function Sidebar({setUser}) {
             )
         }
       };
+
+      const googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            autoDisplay: false
+          },
+          "google_translate_element"
+        );
+      };
+      useEffect(() => {
+        // Check if the script has already been loaded
+        if (!window.googleTranslateElementInit) {
+          var addScript = document.createElement("script");
+          addScript.setAttribute(
+            "src",
+            "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          );
+          document.body.appendChild(addScript);
+          window.googleTranslateElementInit = googleTranslateElementInit;
+        }
+      }, []);
+      
       
       
 
@@ -298,6 +329,8 @@ export default function Sidebar({setUser}) {
                     {list()}
                 </Drawer>
                 <img src={logo} alt="intellihealth logo" className='h-[40px] w-[140px]'/>
+
+                <div id="google_translate_element"></div>
             </div>
 
             {/* ICONS */}

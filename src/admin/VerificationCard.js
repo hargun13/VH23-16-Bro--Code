@@ -8,7 +8,7 @@ const VerificationCard = ({ donorId, requestId, age, blood, authStatus }) => {
   async function verifyRequest() {
     try {
       // Update the authentication status in the request document to true.
-      const requestDocRef = doc(db, 'Donors', donorId, 'Requests', requestId);
+      const requestDocRef = doc(db, 'PrivateSponsor', donorId);
       await updateDoc(requestDocRef, { auth: true });
 
       // Update the local state to indicate verification.
