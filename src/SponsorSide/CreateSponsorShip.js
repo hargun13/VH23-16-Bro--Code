@@ -22,7 +22,7 @@ const style = {
     p: 2,
   };
 
-const DonateOrgan = () => {
+const CreateSponsorShip = () => {
     const [open, setOpen] = useState(true);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -147,4 +147,4 @@ const DonateOrgan = () => {
   )
 }
 
-export default DonateOrgan
+export default CreateSponsorShip

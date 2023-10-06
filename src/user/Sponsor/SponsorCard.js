@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 
-const DonorCard = ({id, organ, authStatus }) => {
+const SponsorCard = ({id, organ, authStatus }) => {
 
     const [requestSent, setRequestSent] = useState(false);
 
@@ -46,4 +46,4 @@ const DonorCard = ({id, organ, authStatus }) => {
   )
 }
 
-export default DonorCard
+export default SponsorCard

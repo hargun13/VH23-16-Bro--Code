@@ -1,76 +1,106 @@
 const data = [
-    {
-      "title": "National Health Mission (NHM)",
-      "content": "NHM, formerly known as NRHM, focuses on improving healthcare infrastructure and services in rural areas. It includes initiatives like Janani Suraksha Yojana (JSY) for maternal healthcare and ambulance services.",
-      "link": "https://nhm.gov.in/",
-      "logo": "https://tsnhm.cgg.gov.in/NHMFWWEB20/images/nhmlogo.png"
-    },
-    {
-      "title": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
-      "content": "PMSSY aims to strengthen healthcare infrastructure, including the establishment of new medical colleges and hospitals in underserved areas.",
-      "link": "https://pmssy-mohfw.nic.in/",
-      "logo": "https://sarkariyojnaa.org/wp-content/uploads/2023/02/sarkari-yojna-img.png"
-    },
-    {
-      "title": "Pradhan Mantri Jan Arogya Yojana (PMJAY)",
-      "content": "PMJAY, also known as Ayushman Bharat, provides health insurance coverage to economically vulnerable families, including those in rural areas.",
-      "link": "https://setu.pmjay.gov.in/",
-      "logo": "https://pmmodiyojana.in/wp-content/uploads/2022/10/image-95-1024x1024.png"
-    },
-    {
-      "title": "Rashtriya Swasthya Bima Yojana (RSBY)",
-      "content": "RSBY was a health insurance scheme for below-poverty-line families, now merged into PMJAY.",
-      "link": "http://www.rsby.gov.in/",
-      "logo": "https://www.bimapaathshala.org/wp-content/uploads/2021/11/rsby-rashtriya-swasthya-bima-yojana.png"
-    },
-    {
-      "title": "National Urban Health Mission (NUHM)",
-      "content": "NUHM primarily focuses on urban areas but also improves healthcare services in urban slums and disadvantaged communities.",
-      "link": "https://www.nhm.gov.in/index1.php?lang=1&level=1&sublinkid=970&lid=137",
-      "logo": "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/national-urban-health-mission.jpg"
-    },
-    {
-      "title": "National Food Security Mission (NFSM)",
-      "content": "NFSM aims to ensure food security, indirectly contributing to rural health by addressing malnutrition and food-related health issues.",
-      "link": "https://www.nfsm.gov.in/",
-      "logo": "https://www.nfsm.gov.in/images/nfsm.png"
-    },
-    {
-      "title": "Integrated Child Development Services (ICDS)",
-      "content": "ICDS provides nutrition and healthcare services to pregnant women and children under six in rural and urban areas.",
-      "link": "https://icds.gov.in/",
-      "logo": "https://icds.gov.in/images/ICDS-1.png"
-    },
-    {
-      "title": "Mukhyamantri Amrutum (MA) Yojana",
-      "content": "MA Yojana is a health insurance scheme implemented in some Indian states, such as Gujarat, providing free medical treatment to families below the poverty line.",
-      "link": "http://www.magujarat.com/index.html",
-      "logo": "https://ma.gujarat.gov.in/images/logo.jpg"
-    },
-    {
-      "title": "National Tuberculosis Elimination Program (NTEP)",
-      "content": "NTEP focuses on the detection and treatment of tuberculosis, including in rural areas.",
-      "link": "https://tbfacts.org/ntep/",
-      "logo": "https://tbfacts.org/wp-content/uploads/2021/03/NTEP.jpg"
-    },
-    {
-      "title": "National Vector Borne Disease Control Program (NVBDCP)",
-      "content": "NVBDCP aims to control vector-borne diseases like malaria, dengue, and lymphatic filariasis in rural and urban areas.",
-      "link": "https://ncvbdc.mohfw.gov.in/",
-      "logo": "https://image.slidesharecdn.com/kailashnvbdcp-180903103021/85/national-vector-borne-disease-control-programme-nvbdcp-2-320.jpg?cb=1665828963"
-    },
-    {
-      "title": "National Rural Drinking Water Program (NRDWP)",
-      "content": "NRDWP provides safe drinking water to rural areas, crucial for public health.",
-      "link": "https://ejalshakti.gov.in/IMISReports/NRDWP_MIS_NationalRuralDrinkingWaterProgramme.html",
-      "logo": "https://www.vivacepanorama.com/wp-content/uploads/2015/10/National-Rural-Drinking-Water-Programme-NRDWP.jpg"
-    },
-    {
-      "title": "National Rural Livelihood Mission (NRLM)",
-      "content": "NRLM focuses on poverty reduction and livelihood enhancement in rural areas, indirectly improving healthcare access.",
-      "link": "https://nrlm.gov.in/",
-      "logo": "https://5.imimg.com/data5/GP/JB/UR/GLADMIN-8538802/selection-055-500x500.png"
-    }
-  ]
+  {
+    name: "National Merit Scholarship",
+    logo: "https://www.nationalmerit.org/s/1758/images/logo.png",
+    description: "Scholarship for meritorious students at the national level.",
+    eligibility: "Class 10th and 12th toppers",
+    awardingAuthority: "Ministry of Education, Government of India",
+    link: "https://example.com/national-merit-scholarship",
+    applicationDeadline: "30th November 2023",
+    benefits: "Rs. 10,000 per annum",
+    state: "National",
+  },
+  {
+    name: "National Means-Cum-Merit Scholarship",
+    logo: "https://dsel.education.gov.in/themes/nexus/assets/images/nmmss2.jpg",
+    description: "Scholarship for economically weaker students.",
+    eligibility:
+      "Class 8th toppers from economically disadvantaged backgrounds",
+    awardingAuthority: "Ministry of Education, Government of India",
+    link: "https://example.com/national-means-scholarship",
+    applicationDeadline: "15th September 2023",
+    benefits: "Rs. 12,000 per annum",
+    state: "National",
+  },
+  {
+    name: "National Scholarship for Persons with Disabilities",
+    logo: "https://higheredn.delhi.gov.in/sites/default/files/logo/emblem-dark-logo_4.png",
+    description: "Scholarship for students with disabilities.",
+    eligibility: "Students with 40% or more disability",
+    awardingAuthority:
+      "Department of Empowerment of Persons with Disabilities, Government of India",
+    link: "https://example.com/disabilities-scholarship",
+    applicationDeadline: "15th October 2023",
+    benefits: "Varies by category",
+    state: "National",
+  },
+  {
+    name: "Central Sector Scholarship Scheme for College and University Students",
+    logo: "https://buddy4study.s3.ap-southeast-1.amazonaws.com/article/wp-content/uploads/2022/08/06155611/Central-Sector-Scholarship-%E2%80%93-A-Scholarship-Scheme-for-College-and-University-Students.jpg",
+    description: "Scholarship for undergraduate students.",
+    eligibility:
+      "Class 12th passed students pursuing regular college/university courses",
+    awardingAuthority: "Ministry of Education, Government of India",
+    link: "https://example.com/central-sector-scholarship",
+    applicationDeadline: "30th September 2023",
+    benefits: "Rs. 10,000 to Rs. 20,000 per annum",
+    state: "National",
+  },
+  {
+    state: "Delhi",
+    name: "Delhi Merit Scholarship",
+    logo: "https://www.latestlaws.com/media/2019/02/600X314_201607290729064474_Delhi-govt-asks-DANICS-officer-to-join-duty_SECVPF.jpg",
+    description: "Scholarship for meritorious students in Delhi.",
+    eligibility: "Class 12th toppers from Delhi schools",
+    awardingAuthority: "Government of Delhi",
+    link: "https://example.com/delhi-merit-scholarship",
+    applicationDeadline: "31st December 2023",
+    benefits: "Rs. 5,000 per annum",
+  },
+  {
+    state: "Delhi",
+    name: "Delhi Minority Scholarship",
+    logo: "https://scholarshiparena.in/wp-content/uploads/2021/10/MERIT-SCHOLARSHIP-FOR-MINORITIES-min-1024x576.png",
+    description: "Scholarship for minority community students in Delhi.",
+    eligibility: "Minority community students pursuing higher education",
+    awardingAuthority: "Government of Delhi",
+    link: "https://example.com/delhi-minority-scholarship",
+    applicationDeadline: "15th October 2023",
+    benefits: "Varies by category",
+  },
+  {
+    state: "Tamil Nadu",
+    name: "Tamil Nadu Government Scholarship",
+    logo: "https://www.nationalmerit.org/s/1758/images/logo.png",
+    description: "Scholarship for students in Tamil Nadu.",
+    eligibility: "Students pursuing various courses in Tamil Nadu",
+    awardingAuthority: "Government of Tamil Nadu",
+    link: "https://example.com/tamil-nadu-scholarship",
+    applicationDeadline: "Varies by category",
+    benefits: "Varies by category",
+  },
+  {
+    state: "Karnataka",
+    name: "Karnataka ePASS (Electronic Payment and Application System of Scholarships)",
+    logo: "https://www.nationalmerit.org/s/1758/images/logo.png",
+    description: "Scholarship for students of Karnataka.",
+    eligibility: "Students from Karnataka pursuing various courses",
+    awardingAuthority: "Government of Karnataka",
+    link: "https://example.com/karnataka-epass",
+    applicationDeadline: "Varies by category",
+    benefits: "Varies by category",
+  },
+  {
+    state: "Maharashtra",
+    name: "Maharashtra State Scholarship",
+    logo: "https://www.nationalmerit.org/s/1758/images/logo.png",
+    description: "Scholarship for students in Maharashtra.",
+    eligibility: "Students pursuing education in Maharashtra",
+    awardingAuthority: "Government of Maharashtra",
+    link: "https://example.com/maharashtra-state-scholarship",
+    applicationDeadline: "28th February 2024",
+    benefits: "Varies by category",
+  },
+];
 
-  export default data
+export default data;

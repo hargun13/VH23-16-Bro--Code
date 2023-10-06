@@ -1,37 +1,44 @@
-const vid_data = 
-[
+const vid_data = [
     {
-        title: "How Can You Prevent Lifestyle Diseases? | Dr. J Sreekanth",
-        src: "https://www.youtube.com/embed/-NgW-H1PRkk?si=uBVPrLcHVAefFT90"
+      title:
+        "100% Scholarship for College Students 🤯 ₹2,00,000 Reliance Foundation Scholarship (Online)",
+      src: "https://www.youtube.com/embed/qCXzf3zGQss?si=N-wjk4-t42_510IO",
     },
     {
-        title: "How to Prevent Heart Disease | Naturally | 100% Science | Doctor's Advice | Dr.Education Eng Hindi",
-        src: "https://www.youtube.com/embed/5GS1gg5FUEQ?si=jRpN6arfG54TtkMs"
-    }, 
-    {
-        title: "10 Rules to Prevent Heart Attack (No one thinks of the Last One)",
-        src: "https://www.youtube.com/embed/NQ5gAP4AHUM?si=mX9aZPgpg28JjFRD"
-    },  
-    {
-        title: "Transforming Rural India Using AI and Digital Technology | Prashant Shukla | TEDxBillabongHighBhopal",
-        src: "https://www.youtube.com/embed/IdBemHBN7xQ?si=6bM828ASlwp09DxH"
+      title: "How to study abroad for free? | Fully Funded Scholarships 2023",
+      src: "https://www.youtube.com/embed/4bnbUjLxGig?si=jlD9pVjSPFV1FwdM",
     },
     {
-        title: "Revolutionizing India’s Rural Healthcare Through Technology",
-        src: "https://www.youtube.com/embed/ShW9zzztzKk?si=1G63QeeZMxxXUing"
+      title:
+        "Study Abroad For FREE | Top 5 Fully Funded Scholarships For Indian Students | USA, UK",
+      src: "https://www.youtube.com/embed/Mlv7LB9u1_Y?si=3yp3Iu9mtAF7J0lg",
     },
     {
-        title: "Making Health Care Accessibel to Rural India",
-        src: "https://www.youtube.com/embed/PYBim0Y7oEk?si=pG4PMeG_QVOXNWBI"
-    },  
-    {
-        title: "Bridging the rural healthcare gap | Rubayat Khan | TEDxDhaka",
-        src: "https://www.youtube.com/embed/bAqhvi8r4Ao?si=9lhCucy52ZMCTAR9"
+      title:
+        "Government Scholarships For FREE | Best Scholarships For College Students | Govt Funds | Josh Money",
+      src: "https://www.youtube.com/embed/0Yc1UwD9KH4?si=qHJ2PyYnnc1ZNNCs",
     },
     {
-        title: "Impact of lifestyle diseases in rural India?",
-        src: "https://www.youtube.com/embed/0RJq45ddfFo?si=Eg0j_04-_NHZEu-S"
+      title:
+        "Scholarships for Students | Benefits upto 500000 🤑🔥| Free to Apply | Application Closing Soon !",
+      src: "https://www.youtube.com/embed/TPVKYzaGmYs?si=Ah9aFr5Oj1Mhp1qh",
     },
-]
-
-export default vid_data
+    {
+      title:
+        "Pragati Scholarship Scheme For Girls 2023-24 | How to Apply Complete Process | Rs 50, 000 Per Year",
+      src: "https://www.youtube.com/embed/1XIMC6inao0?si=0POiv1o2TnKyqcmd",
+    },
+    {
+      title:
+        "UK Universities offering 100% scholarship for Indian students | Eligibility & Steps to Apply",
+      src: "https://www.youtube.com/embed/nUj-S68K_T4?si=FSEPFGYYXrRGSQrE",
+    },
+    {
+      title:
+        "Get Admission in SYDNEY UNIVERSITY with 100% Scholarship | ShirishGee",
+      src: "https://www.youtube.com/embed/oWGqM3p-r8Q?si=o5Q6YKL6VMwQp9vD",
+    },
+  ];
+  
+  export default vid_data;
+  

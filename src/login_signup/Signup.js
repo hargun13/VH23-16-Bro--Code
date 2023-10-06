@@ -8,6 +8,7 @@ import { UserAuth } from '../FirebaseAuthContext/AuthContext'
 // import axios from "axios";
 import { useRoleContext } from './roleContext'
 import Tesseract from 'tesseract.js';
+import student_image from './student.jpg'
 
 
 const Signup = ({setUser}) => {
@@ -123,8 +124,8 @@ const Signup = ({setUser}) => {
                         required
                     >
                         <option defaultValue>Choose a type</option>
-                        <option value="patient">Patient</option>
-                        <option value="donor">Donor</option>
+                        <option value="user">User</option>
+                        <option value="sponsor">Sponsor</option>
                         <option value="admin">Admin</option>
                     </select>
                     <div className="mt-5">
@@ -155,7 +156,7 @@ const Signup = ({setUser}) => {
         </div>
 
         <div className="w-[55%] h-full bg-white">
-                Enter image here for the scholarship related wala part 
+                <img src={student_image} alt="student image" />
         </div>
         
     </div>

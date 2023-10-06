@@ -8,7 +8,7 @@ const BlogsPage = () => {
   return (
     <div>
       
-      <p className='text-4xl px-20 py-10'>Exploring Health and Wellness: Dive into Our Informative Blogs</p>
+      <p className='text-4xl px-20 py-10'>Exploring Scholarships: Dive into Our Informative Blogs</p>
 
       <Hero />
 

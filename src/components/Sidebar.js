@@ -23,6 +23,10 @@ import MicIcon from '@mui/icons-material/Mic';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import DomainVerificationIcon from '@mui/icons-material/DomainVerification';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import PeopleIcon from '@mui/icons-material/People';
+import CalculateIcon from '@mui/icons-material/Calculate';
+import ChecklistIcon from '@mui/icons-material/Checklist';
 //image
 import logo from "../login_signup/edfund.io.png"
 
@@ -128,7 +132,7 @@ export default function Sidebar({setUser}) {
 
   
     const list = () => {
-        if (role === 'patient' || role === 'donor') {
+        if (role === 'user' || role === 'sponsor') {
           return (
             <div
               onClick={toggleDrawer(false)}
@@ -138,64 +142,117 @@ export default function Sidebar({setUser}) {
             >
               <img src={logo} alt="intellihealth logo" className='w-[80%] h-auto'/>
               <List className='w-full'>
-                <ListItem className='my-5'>
-                  <Link to="/community">
-                    <Button style={{ color: 'black' }}>
-                      <HomeIcon className='mr-3'/>Community
-                    </Button>
-                  </Link>
-                </ListItem>
-                {role === 'patient' ? (
-                  <ListItem className='my-5'>
-                    <Link to="/finddonor">
+
+                {role === 'user' ? (
+                  <ListItem className=''>
+                    <Link to="/community">
                       <Button style={{ color: 'black' }}>
-                        <CalendarTodayIcon className='mr-3'/>Find a Donor
+                        <HomeIcon className='mr-3'/>Dashboard
+                      </Button>
+                    </Link>
+                  </ListItem>
+                ) : role === 'sponsor' ? (
+                  <ListItem className=''>
+                    <Link to="/community">
+                      <Button style={{ color: 'black' }}>
+                        <HomeIcon className='mr-3'/>Dashboard
                       </Button>
                     </Link>
                   </ListItem>
                 ) : (
-                  <ListItem className='my-5'>
-                    <Link to="/donateorgan">
+                  <ListItem className=''>
+                  <Link to="/community">
+                    <Button style={{ color: 'black' }}>
+                      <HomeIcon className='mr-3'/>Dashboard
+                    </Button>
+                  </Link>
+                </ListItem>
+                )}
+                
+                <ListItem className=''>
+                  <Link to="/community">
+                    <Button style={{ color: 'black' }}>
+                      <PeopleIcon className='mr-3'/>Community
+                    </Button>
+                  </Link>
+                </ListItem>
+
+                {role === 'user' ? (
+                  <div>
+                    <ListItem className=''>
+                      <Link to="/find-scholarship">
                         <Button style={{ color: 'black' }}>
-                        <CalendarTodayIcon className='mr-3'/>Donate
+                          <AttachMoneyIcon className='mr-3'/>Find a Scholarship
+                        </Button>
+                      </Link>
+                    </ListItem>
+
+                    <ListItem className=''>
+                      <Link to="/aid-calculator">
+                        <Button style={{ color: 'black' }}>
+                          <CalculateIcon className='mr-3'/>Aid Calculator
+                        </Button>
+                      </Link>
+                    </ListItem>
+
+                    <ListItem className=''>
+                      <Link to="/application-tracker">
+                        <Button style={{ color: 'black' }}>
+                          <ChecklistIcon className='mr-3'/>Application Tracker
+                        </Button>
+                      </Link>
+                    </ListItem>
+
+                    <ListItem className=''>
+                      <Link to="/scholarships">
+                        <Button style={{ color: 'black' }}>
+                          <AccountBalanceIcon className='mr-3'/>Scholarships
+                        </Button>
+                      </Link>
+                    </ListItem>
+                  </div>
+                ) : (
+                  <ListItem className=''>
+                    <Link to="/create-scholarship">
+                        <Button style={{ color: 'black' }}>
+                        <AttachMoneyIcon className='mr-3'/>Create a Scholarship
                         </Button>
                     </Link>
                   </ListItem>
                 )}
-                <ListItem className='my-5'>
+
+                <ListItem className=''>
                   <Link to="/education">
                     <Button style={{ color: 'black' }}>
                       <CastForEducationIcon className='mr-3'/>Education
                     </Button>
                   </Link>
                 </ListItem>
-                <ListItem className='my-5'>
-                  <Link to="/insurance">
-                    <Button style={{ color: 'black' }}>
-                      <AccountBalanceIcon className='mr-3'/>Insurance
-                    </Button>
-                  </Link>
-                </ListItem>
-                <ListItem className='my-5'>
+
+                
+
+                <ListItem className=''>
                   <Link to="/schemes">   
                     <Button style={{ color: 'black' }}>
                       <GavelIcon className='mr-3'/>Gov. Schemes
                     </Button>
                   </Link>
                 </ListItem>
-                <ListItem className='my-5'>
+
+                <ListItem className=''>
                   <Link to="/fundraiser">   
                     <Button style={{ color: 'black' }}>
                       <VolunteerActivismIcon className='mr-3'/>Fundraiser
                     </Button>
                   </Link>
                 </ListItem>
+
               </List>
             </div>
           );
         }else{
             return(
-                <div
+            <div
               onClick={toggleDrawer(false)}
               onKeyDown={toggleDrawer(false)}
               className='py-5 px-2 h-full'
@@ -203,21 +260,14 @@ export default function Sidebar({setUser}) {
             >
               <img src={logo} alt="intellihealth logo" className='w-[80%] h-auto'/>
                 <List>
-                    <ListItem className='my-5'>
-                        <Link to="/community">
-                            <Button style={{ color: 'black' }}>
-                            <HomeIcon className='mr-3'/>Community
-                            </Button>
-                        </Link>
-                    </ListItem>
-                    <ListItem className='my-5'>
+                    <ListItem className=''>
                         <Link to="/analytics">   
                             <Button style={{ color: 'black' }}>
                               <AnalyticsIcon className='mr-3'/>Analytics
                             </Button>
                         </Link>
                     </ListItem>
-                    <ListItem className='my-5'>
+                    <ListItem className=''>
                         <Link to="/verification">   
                             <Button style={{ color: 'black' }}>
                               <DomainVerificationIcon className='mr-3'/>Request Verification
@@ -275,7 +325,7 @@ export default function Sidebar({setUser}) {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            <h1 className=" text-center text-2xl mb-10">Voice Assisted Tab Navigation</h1>
+                            <h1 className=" text-center text-2xl 0">Voice Assisted Tab Navigation</h1>
                             <p className="my-16">Transcript: &nbsp;&nbsp;
                             <span className="text-white">{transcript}</span> </p>
                             <div className=" flex items-center justify-center">
