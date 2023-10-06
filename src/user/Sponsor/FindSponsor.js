@@ -3,7 +3,9 @@ import Button from '@mui/material/Button';
 import { TextField } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 import LinearProgress from '@mui/material/LinearProgress';
-// import ScholarshipRecommendations from './ScholarshipRecommendations'; // Import your recommendations component
+import scholarshipData from '../Scholarships/scholarshipData';
+import { BsArrowRight } from "react-icons/bs";
+
 
 const FindSponsor = () => {
   const [loading, setLoading] = useState(false);
@@ -56,8 +58,46 @@ const FindSponsor = () => {
         </div>
         </div>
       ) : (
-        <>recommendations</>// <ScholarshipRecommendations /> // Display the scholarship recommendations component
-      )}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
+          {scholarshipData
+            .slice(0, 6)
+            .map((scholarshipData, index) => (
+              <div
+                key={index}
+                className="border-[1px] border-gray-100 shadow-2xl m-3 p-5 rounded-2xl transition duration-500 hover:-translate-y-2 flex flex-col items-center justify-between"
+              >
+                <div className="mb-4">
+                  <img
+                    src={scholarshipData.logo}
+                    alt={scholarshipData.title}
+                    className="h-[250px] w-full rounded-2xl shadow-xl"
+                  />
+                  <p className="py-2 text-2xl font-bold text-[#1b1b1b] w-full">
+                    {scholarshipData.title}
+                  </p>
+                  <p className="py-2 text-sm tracking-widest font-normal text-[#1b1b1b] w-full">
+                    Degree: {scholarshipData.degrees}
+                  </p>
+                  <p>Fees Covered: {scholarshipData.funds}</p>
+                  <p>Location: {scholarshipData.location}</p>
+                </div>
+                <a href={scholarshipData.link} target="_blank" rel="noreferrer">
+                  <Button
+                    style={{ paddingLeft: "30px", paddingRight: "30px", paddingTop: "10px", paddingBottom: "10px", width: "100%"}}
+                    className="text-white text-xl font-bold flex items-center justify-center gap-5 group"
+                    variant="contained"
+                  >
+                    Explore
+                    <BsArrowRight
+                      size={30}
+                      className="transition duration-300 group-hover:translate-x-4"
+                    />
+                  </Button>
+                </a>
+              </div>
+            ))}
+        </div>
+        )}
 
       <div className='w-full flex items-center justify-center mt-10'>
         <Button

@@ -26,6 +26,7 @@ import DomainVerificationIcon from '@mui/icons-material/DomainVerification';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import PeopleIcon from '@mui/icons-material/People';
 import CalculateIcon from '@mui/icons-material/Calculate';
+import ChecklistIcon from '@mui/icons-material/Checklist';
 //image
 import logo from "../login_signup/edfund.io.png"
 
@@ -187,9 +188,17 @@ export default function Sidebar({setUser}) {
                     </ListItem>
 
                     <ListItem className=''>
-                      <Link to="/find-scholarship">
+                      <Link to="/aid-calculator">
                         <Button style={{ color: 'black' }}>
                           <CalculateIcon className='mr-3'/>Aid Calculator
+                        </Button>
+                      </Link>
+                    </ListItem>
+
+                    <ListItem className=''>
+                      <Link to="/application-tracker">
+                        <Button style={{ color: 'black' }}>
+                          <ChecklistIcon className='mr-3'/>Application Tracker
                         </Button>
                       </Link>
                     </ListItem>
