@@ -92,7 +92,7 @@ const Overview = () => {
             Address: add1 + ","  + add2 + "," + state,
         }
 
-        addDoc( dbRef, details).then().catch((error) => {
+        addDoc( dbRef, details).then(alert("Your Changes Have Been Saved")).catch((error) => {
             console.log(error)
             alert("Data is not saved")
           })
