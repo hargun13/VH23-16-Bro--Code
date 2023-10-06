@@ -11,7 +11,7 @@ import BlogsPage from './user/Education/Blog/BlogsPage';
 import VideosPage from './user/Education/Videos/VideosPage';
 import Insurance from './user/Insurance/Insurance';
 import GovScehems from './user/GovSchemes/GovScehems';
-import PatientProfile from './user/UserMain/PatientProfile/PatientProfile';
+import UserProfile from './user/UserMain/PatientProfile/UserProfile';
 // import FindDonor from './user/Donor/FindDonor';
 // import DonorList from './user/Donor/DonorList';
 import Fundraiser from './user/Fundraiser/Fundraiser';
@@ -38,7 +38,7 @@ function App() {
         <Route path='/edvideo' element={<VideosPage />} />
         <Route path='/insurance' element={<Insurance />} />
         <Route path='/schemes' element={<GovScehems />} />
-        <Route path='/patientprofile' element={<PatientProfile />} />
+        <Route path='/patientprofile' element={<UserProfile />} />
         {/* <Route path='/finddonor' element={<FindDonor />} />
         <Route path='/donorlist' element={<DonorList />} /> */}
         <Route path='/fundraiser' element={<Fundraiser />} />

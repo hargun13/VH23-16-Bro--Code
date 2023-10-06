@@ -6,7 +6,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 
-const Medical = () => {
+const Personal = () => {
 
 
   return (
@@ -22,16 +22,19 @@ const Medical = () => {
                 <TextField sx={{ minWidth: 350 }} id="outlined-basic" label="Hospital/Healthcare Facility Name" variant="outlined" /> 
                 <TextField sx={{ minWidth: 350 }} id="outlined-basic" label="Any specific preferences or requirements for a potential donor?" variant="outlined" type="number" />
                 <FormControl sx={{ minWidth: 350 }}>
-                    <InputLabel id="demo-simple-select-label">Are you registered as an organ recipient with any other organizations?</InputLabel>
+                    <InputLabel id="demo-simple-select-label">What is your enthinicity?</InputLabel>
                     <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={gender}
-                    label="Are you registered as an organ recipient with any other organizations?"
+                    label="What is your ethinicity?"
                     // onChange={handleChange}
                     >
-                      <MenuItem value={'yes'}>Yes</MenuItem>
-                      <MenuItem value={'no'}>No</MenuItem>
+                      <MenuItem value={'Hindi'}>Hindi</MenuItem>
+                      <MenuItem value={'Bengali'}>Bengali</MenuItem>
+                      <MenuItem value={'Punjabi'}>Punjabi</MenuItem>
+                      <MenuItem value={'Tamil'}>Tamil</MenuItem>
+                      <MenuItem value={'Kannad'}>Kannad</MenuItem>
                     </Select>
                 </FormControl>
             </div>
@@ -68,4 +71,4 @@ const Medical = () => {
   )
 }
 
-export default Medical
+export default Personal

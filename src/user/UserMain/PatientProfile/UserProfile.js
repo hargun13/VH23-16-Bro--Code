@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { UserAuth } from '../../../FirebaseAuthContext/AuthContext';
 import Overview from './Overview'; // Import all tab components
-import Medical from './Medical';
-import Consent from './Consent';
+import Personal from './Personal';
+// import Consent from './Consent';
 
-const PatientProfile = () => {
+const UserProfile = () => {
   const { user } = UserAuth();
 
   // State to manage the active tab
@@ -18,8 +18,8 @@ const PatientProfile = () => {
   // Define the content of each tab based on the activeTab state
   const tabContents = {
     Overview: <Overview />,
-    Medical: <Medical />,
-    Consent: <Consent />,
+    Personal: <Personal />,
+    // Consent: <Consent />,
   };
 
   return (
@@ -52,4 +52,4 @@ const PatientProfile = () => {
   );
 }
 
-export default PatientProfile;
+export default UserProfile;
