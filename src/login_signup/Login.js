@@ -8,6 +8,7 @@ import { UserAuth } from '../FirebaseAuthContext/AuthContext';
 import { useRoleContext } from './roleContext'
 import Webcam from 'react-webcam';
 import axios from 'axios';
+import student_image from './student.jpg'
 
 
 const Login = ({setUser}) => {
@@ -114,8 +115,8 @@ const Login = ({setUser}) => {
                         required
                     >
                         <option defaultValue>Choose a type</option>
-                        <option value="patient">Patient</option>
-                        <option value="donor">Donor</option>
+                        <option value="user">User</option>
+                        <option value="sponsor">Sponsor</option>
                         <option value="admin">Admin</option>
                     </select>
                     </div>
@@ -151,7 +152,7 @@ const Login = ({setUser}) => {
         </div>
 
         <div className="w-[55%] h-full bg-white">
-                Enter image here for the scholarship related wala part 
+                <img src={student_image} alt="student image" />
         </div>
 
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const TrendingSec = () => {
   return (
@@ -49,42 +50,45 @@ const TrendingSec = () => {
             <div className='mt-5 mb-8 flex items-center justify-around w-full'>
                 <div className='w-[85%] flex items-center justify-start gap-5'>  
 
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwrF5ZYvUG2M3x3cdFyx1pxEWlLFXt31LUg&usqp=CAU' alt='random' className='h-16 w-16 rounded-2xl' /> 
+                    <img src='https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80' alt='random' className='h-16 w-16 rounded-2xl' /> 
 
                     <div >
-                        <p>Elliop</p>
-                        <p>@Elliop_Sh</p>
+                        <p>Engineering Community</p>
+                        <p>@engineers</p>
                     </div>
                     
                 </div>
+                <Link to="/community/engineering-community"><Button variant="contained" style={{marginRight:"10px"}}>Explore</Button></Link>
                 <Button variant="contained">Follow</Button>
             </div>
 
             <div className='mt-5 mb-8 flex items-center justify-around w-full'>
                 <div className='w-[85%] flex items-center justify-start gap-5'>  
 
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwrF5ZYvUG2M3x3cdFyx1pxEWlLFXt31LUg&usqp=CAU' alt='random' className='h-16 w-16 rounded-2xl' /> 
+                    <img src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80' alt='random' className='h-16 w-16 rounded-2xl' /> 
 
                     <div >
-                        <p>Elliop</p>
-                        <p>@Elliop_Sh</p>
+                        <p>Management Community</p>
+                        <p>@managers</p>
                     </div>
                     
                 </div>
+                <Link to="/community/engineering-community"><Button variant="contained" style={{marginRight:"10px"}}>Explore</Button></Link>
                 <Button variant="contained">Follow</Button>
             </div>
 
             <div className='mt-5 mb-8 flex items-center justify-around w-full'>
                 <div className='w-[85%] flex items-center justify-start gap-5'>  
 
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwrF5ZYvUG2M3x3cdFyx1pxEWlLFXt31LUg&usqp=CAU' alt='random' className='h-16 w-16 rounded-2xl' /> 
+                    <img src='https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80' alt='random' className='h-16 w-16 rounded-2xl' /> 
 
                     <div >
-                        <p>Elliop</p>
-                        <p>@Elliop_Sh</p>
+                        <p>Law Community</p>
+                        <p>@lawyers</p>
                     </div>
                     
                 </div>
+                <Link to="/community/engineering-community"><Button variant="contained" style={{marginRight:"10px"}}>Explore</Button></Link>
                 <Button variant="contained">Follow</Button>
             </div>
 
@@ -98,4 +102,7 @@ const TrendingSec = () => {
 }
 
 export default TrendingSec
+
+
+//https://whereby.com/developers-scholarship-portal   - community wala room whereby
 

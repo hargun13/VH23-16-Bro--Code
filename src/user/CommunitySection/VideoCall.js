@@ -4,12 +4,13 @@ const VideoCall = () => {
   return (
     <div>
 
-        <p className="text-4xl px-10 pb-10 pt-5">Meeting With Donor</p>
+        <p className="text-xl px-10 py-5 font-extrabold">Live Session - Engineering Community</p>
 
         <iframe
-        src="https://whereby.com/intellihealth-liver-donor-patient"
+        src="https://whereby.com/developers-scholarship-portal"
         allow="camera; microphone; fullscreen; speaker; display-capture"
         className="w-full h-[86vh] ease-in-out"
+        title="videocall"
         >
         </iframe>
 
