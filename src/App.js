@@ -17,10 +17,12 @@ import UserProfile from './user/UserMain/UserProfile';
 import Fundraiser from './user/Fundraiser/Fundraiser';
 import FindSponsor from './user/Sponsor/FindSponsor';
 import ScholarshipCalculator from './user/AidCalculator/ScholarshipCalculator';
+import ScholarshipList from './user/ApplicationTracker/ScholarshipList';
 
 
 import Analytics from './admin/Analytics';
 import Verification from './admin/Verification';
+import ApplicationTracker from './user/ApplicationTracker/ApplicationTracker';
 
 function App() {
   const [user, setUser] = useState(false);
@@ -44,6 +46,8 @@ function App() {
         <Route path='/fundraiser' element={<Fundraiser />} />
         <Route path='/find-scholarship' element={<FindSponsor />} />
         <Route path='/aid-calculator' element={<ScholarshipCalculator />} />
+        <Route path='/appliedList' element={<ScholarshipList />} />
+        <Route path='/applicationTracker' element={<ApplicationTracker />} />
 
 
         <Route path='/analytics' element={<Analytics />} />

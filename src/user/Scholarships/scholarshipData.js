@@ -22,6 +22,7 @@ const scholarshipData = [
     date: "30 June 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: true,
   },
   {
     "": 1,
@@ -32,6 +33,7 @@ const scholarshipData = [
     date: "31 July 2022",
     location: "united-states",
     link: "https://kpi.ua/en/15-11-05",
+    applied: false,
   },
   {
     "": 2,
@@ -42,6 +44,7 @@ const scholarshipData = [
     date: "22 December 2022",
     location: "united-states",
     link: "https://fatherprada.com/ongoing-scholarship/international-student-support-contest-2022-2023/",
+    applied: false,
   },
   {
     "": 3,
@@ -52,6 +55,7 @@ const scholarshipData = [
     date: "15 September 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 4,
@@ -62,6 +66,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-states",
     link: "https://www.oakwoodhealth.com/improve-mens-health-scholarship/",
+    applied: false,
   },
   {
     "": 5,
@@ -73,6 +78,7 @@ const scholarshipData = [
     date: "1 July 2022",
     location: "united-states",
     link: "https://newstuck.com/3-month-f1-study-english-in-u-s-visa-scholarship-windsor/",
+    applied: false,
   },
   {
     "": 6,
@@ -83,6 +89,7 @@ const scholarshipData = [
     date: "30 December 2022",
     location: "united-states",
     link: "https://www.artuniverse.org/",
+    applied: true,
   },
   {
     "": 7,
@@ -93,6 +100,7 @@ const scholarshipData = [
     date: "1 December 2022",
     location: "united-states",
     link: "https://www.augsburg.edu/multicultural-life/scholarships/#:~:text=Augsburg's%20American%20Indian%20Recognition%20Full,students%20starting%20in%20Fall%202022.",
+    applied: false,
   },
   {
     "": 8,
@@ -103,6 +111,7 @@ const scholarshipData = [
     date: "28 April 2023",
     location: "united-states",
     link: "https://www.opportunitiescircle.com/blog/top-competitions-for-international-students-youth/",
+    applied: false,
   },
   {
     "": 9,
@@ -113,6 +122,7 @@ const scholarshipData = [
     date: "24 March 2027",
     location: "united-states",
     link: "https://www.scholars4dev.com/",
+    applied: false,
   },
   {
     "": 10,
@@ -123,6 +133,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.rhsupplies.org/activities-resources/laptop/scholarships/",
+    applied: false,
   },
   {
     "": 11,
@@ -134,6 +145,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 12,
@@ -144,6 +156,7 @@ const scholarshipData = [
     date: "30 June 2023",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: true,
   },
   {
     "": 13,
@@ -154,6 +167,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 14,
@@ -164,6 +178,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 15,
@@ -174,6 +189,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 16,
@@ -185,6 +201,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 17,
@@ -196,6 +213,7 @@ const scholarshipData = [
     date: "31 August 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 18,
@@ -206,6 +224,7 @@ const scholarshipData = [
     date: "29 June 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 19,
@@ -217,6 +236,7 @@ const scholarshipData = [
     date: "10 June 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
   {
     "": 20,
@@ -227,6 +247,7 @@ const scholarshipData = [
     date: "",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    applied: false,
   },
 ];
 

@@ -196,7 +196,7 @@ export default function Sidebar({setUser}) {
                     </ListItem>
 
                     <ListItem className=''>
-                      <Link to="/application-tracker">
+                      <Link to="/appliedList">
                         <Button style={{ color: 'black' }}>
                           <ChecklistIcon className='mr-3'/>Application Tracker
                         </Button>

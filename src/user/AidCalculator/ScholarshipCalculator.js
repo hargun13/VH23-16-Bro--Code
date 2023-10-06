@@ -27,12 +27,12 @@ const ScholarshipCalculator = () => {
 
   return (
     <div>
-      <div className="flex justify-evenly items-center pb-10">
-        <p className="text-4xl px-10">Financial Aid Calculator</p>
+      <div className="flex justify-evenly items-center pb-5">
+        <p className="text-4xl px-10 py-5">Financial Aid Calculator</p>
       </div>
 
       <Paper
-        className="flex justify-evenly items-center p-10 m-6"
+        className="flex justify-evenly items-center px-10 py-5 m-6"
         elevation={4}
       >
         <TextField
@@ -167,7 +167,7 @@ const ScholarshipCalculator = () => {
         </div>
       </Paper>
 
-      <div className="w-full flex items-center justify-center mt-10">
+      <div className="w-full flex items-center justify-center mb-5">
         <Button
           style={{
             paddingLeft: "36px",
@@ -175,7 +175,7 @@ const ScholarshipCalculator = () => {
             paddingTop: "12px",
             paddingBottom: "12px",
           }}
-          className=" text-white text-xl font-bold flex items-center justify-center gap-5  group "
+          className=" text-white pb-5 text-xl font-bold flex items-center justify-center gap-5  group "
           variant="contained"
         >
           Calculate
