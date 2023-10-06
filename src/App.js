@@ -11,7 +11,7 @@ import BlogsPage from './user/Education/Blog/BlogsPage';
 import VideosPage from './user/Education/Videos/VideosPage';
 import Insurance from './user/Insurance/Insurance';
 import GovScehems from './user/GovSchemes/GovScehems';
-import UserProfile from './user/UserMain/PatientProfile/UserProfile';
+import UserProfile from './user/UserMain/UserProfile/UserProfile';
 // import FindDonor from './user/Donor/FindDonor';
 // import DonorList from './user/Donor/DonorList';
 import Fundraiser from './user/Fundraiser/Fundraiser';
