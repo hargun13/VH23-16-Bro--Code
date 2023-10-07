@@ -19,32 +19,8 @@ const style = {
 
 const Filters = ({ onFilterChange }) => {
   const [open, setOpen] = React.useState(false);
-
-  // Separate state variables for each filter criteria
-  const [locationFilter, setLocationFilter] = React.useState("National");
-  const [ageFilter, setAgeFilter] = React.useState("null");
-  const [categoryFilter, setCategoryFilter] = React.useState("null");
-
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-  const handleLocationChange = (e) => {
-    const newValue = e.target.value;
-    setLocationFilter(newValue);
-    onFilterChange(newValue, ageFilter, categoryFilter);
-  };
-
-  const handleAgeChange = (e) => {
-    const newValue = e.target.value;
-    setAgeFilter(newValue);
-    onFilterChange(locationFilter, newValue, categoryFilter);
-  };
-
-  const handleCategoryChange = (e) => {
-    const newValue = e.target.value;
-    setCategoryFilter(newValue);
-    onFilterChange(locationFilter, ageFilter, newValue);
-  };
 
   return (
     <div>
@@ -63,14 +39,18 @@ const Filters = ({ onFilterChange }) => {
             Filters
           </Typography>
           <div className="flex justify-evenly">
-            <select value={locationFilter} onChange={handleLocationChange}>
+            <select onChange={(e) => onFilterChange(e.target.value)}>
               <option value="National">National</option>
               <option value="Delhi">Delhi</option>
               <option value="Tamil Nadu">Tamil Nadu</option>
               <option value="Karnataka">Karnataka</option>
               <option value="Maharashtra">Maharashtra</option>
             </select>
-            <select value={ageFilter} onChange={handleAgeChange}>
+            <select
+              name=""
+              id=""
+              onChange={(e) => onFilterChange(e.target.value)}
+            >
               <option value="null">none</option>
               <option value="14">14</option>
               <option value="16-17">16-17</option>
@@ -79,7 +59,12 @@ const Filters = ({ onFilterChange }) => {
               <option value="20-25">20-25</option>
               <option value="25-30">25-30</option>
             </select>
-            <select value={categoryFilter} onChange={handleCategoryChange}>
+
+            <select
+              name=""
+              id=""
+              onChange={(e) => onFilterChange(e.target.value)}
+            >
               <option value="null">none</option>
               <option value="disability">disability</option>
               <option value="minority">minority</option>
