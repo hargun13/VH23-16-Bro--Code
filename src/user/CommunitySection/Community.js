@@ -1,9 +1,12 @@
 import React from 'react'
 import Post from './Post'
 import TrendingSec from './TrendingSec'
+import DefaultModal from '../../components/DefaultModal'
 
 const Community = () => {
   return (
+    <>
+    <DefaultModal />
     <div className='flex items-start justify-center w-full h-full px-3 gap-2'>
       
       <div className='w-[50%] h-full border-r border-l  border-gray-700 flex flex-col items-center'>
@@ -25,6 +28,7 @@ const Community = () => {
       </div>
 
     </div>
+    </>
   )
 }
 

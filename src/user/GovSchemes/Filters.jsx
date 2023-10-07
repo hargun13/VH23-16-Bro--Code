@@ -19,8 +19,32 @@ const style = {
 
 const Filters = ({ onFilterChange }) => {
   const [open, setOpen] = React.useState(false);
+
+  // Separate state variables for each filter criteria
+  const [locationFilter, setLocationFilter] = React.useState("National");
+  const [ageFilter, setAgeFilter] = React.useState("null");
+  const [categoryFilter, setCategoryFilter] = React.useState("null");
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const handleLocationChange = (e) => {
+    const newValue = e.target.value;
+    setLocationFilter(newValue);
+    onFilterChange(newValue, ageFilter, categoryFilter);
+  };
+
+  const handleAgeChange = (e) => {
+    const newValue = e.target.value;
+    setAgeFilter(newValue);
+    onFilterChange(locationFilter, newValue, categoryFilter);
+  };
+
+  const handleCategoryChange = (e) => {
+    const newValue = e.target.value;
+    setCategoryFilter(newValue);
+    onFilterChange(locationFilter, ageFilter, newValue);
+  };
 
   return (
     <div>
@@ -36,15 +60,31 @@ const Filters = ({ onFilterChange }) => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Region-wise
+            Filters
           </Typography>
-          <select onChange={(e) => onFilterChange(e.target.value)}>
-            <option value="National">National</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Karnataka">Karnataka</option>
-            <option value="Maharashtra">Maharashtra</option>
-          </select>
+          <div className="flex justify-evenly">
+            <select value={locationFilter} onChange={handleLocationChange}>
+              <option value="National">National</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Maharashtra">Maharashtra</option>
+            </select>
+            <select value={ageFilter} onChange={handleAgeChange}>
+              <option value="null">none</option>
+              <option value="14">14</option>
+              <option value="16-17">16-17</option>
+              <option value="18">18</option>
+              <option value="18-20">19-20</option>
+              <option value="20-25">20-25</option>
+              <option value="25-30">25-30</option>
+            </select>
+            <select value={categoryFilter} onChange={handleCategoryChange}>
+              <option value="null">none</option>
+              <option value="disability">disability</option>
+              <option value="minority">minority</option>
+            </select>
+          </div>
         </Box>
       </Modal>
     </div>

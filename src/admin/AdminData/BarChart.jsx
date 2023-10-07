@@ -37,7 +37,7 @@ const BarChart = () => {
     ],
     datasets: [
       {
-        label: "Donations (in thousand)",
+        label: "students (in hundreds)",
         data: [90, 130, 115, 150, 180, 121, 85, 101, 75, 0, 0, 0],
         backgroundColor: "#f55da9",
       },
@@ -48,13 +48,13 @@ const BarChart = () => {
     plugins: {
       title: {
         display: true,
-        text: "Fundraiser for Organ Transplant", 
+        text: "Students Applying for scholarships",
         padding: {
           top: 10,
           bottom: 10,
         },
         font: {
-          size: 16, 
+          size: 16,
         },
       },
     },

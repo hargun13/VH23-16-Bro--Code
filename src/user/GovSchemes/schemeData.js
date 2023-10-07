@@ -9,6 +9,7 @@ const data = [
     applicationDeadline: "30th November 2023",
     benefits: "Rs. 10,000 per annum",
     state: "National",
+    ageCriteria: "16-17",
   },
   {
     name: "National Means-Cum-Merit Scholarship",
@@ -21,6 +22,7 @@ const data = [
     applicationDeadline: "15th September 2023",
     benefits: "Rs. 12,000 per annum",
     state: "National",
+    ageCriteria: "14",
   },
   {
     name: "National Scholarship for Persons with Disabilities",
@@ -33,6 +35,7 @@ const data = [
     applicationDeadline: "15th October 2023",
     benefits: "Varies by category",
     state: "National",
+    ageCriteria: "disability",
   },
   {
     name: "Central Sector Scholarship Scheme for College and University Students",
@@ -45,6 +48,7 @@ const data = [
     applicationDeadline: "30th September 2023",
     benefits: "Rs. 10,000 to Rs. 20,000 per annum",
     state: "National",
+    ageCriteria: "Delhi",
   },
   {
     state: "Delhi",
@@ -56,6 +60,7 @@ const data = [
     link: "https://example.com/delhi-merit-scholarship",
     applicationDeadline: "31st December 2023",
     benefits: "Rs. 5,000 per annum",
+    ageCriteria: "Delhi",
   },
   {
     state: "Delhi",
@@ -67,6 +72,7 @@ const data = [
     link: "https://example.com/delhi-minority-scholarship",
     applicationDeadline: "15th October 2023",
     benefits: "Varies by category",
+    ageCriteria: "minority",
   },
   {
     state: "Tamil Nadu",
@@ -78,6 +84,7 @@ const data = [
     link: "https://example.com/tamil-nadu-scholarship",
     applicationDeadline: "Varies by category",
     benefits: "Varies by category",
+    ageCriteria: "Tamil Nadu",
   },
   {
     state: "Karnataka",
@@ -89,6 +96,7 @@ const data = [
     link: "https://example.com/karnataka-epass",
     applicationDeadline: "Varies by category",
     benefits: "Varies by category",
+    ageCriteria: "Karnataka",
   },
   {
     state: "Maharashtra",
@@ -100,6 +108,7 @@ const data = [
     link: "https://example.com/maharashtra-state-scholarship",
     applicationDeadline: "28th February 2024",
     benefits: "Varies by category",
+    ageCriteria: "Maharashtra",
   },
 ];
 

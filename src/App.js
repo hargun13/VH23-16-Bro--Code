@@ -19,6 +19,8 @@ import FindSponsor from './user/Sponsor/FindSponsor';
 import ScholarshipCalculator from './user/AidCalculator/ScholarshipCalculator';
 import ApplicationTracker from './user/ApplicationTracker/ApplicationTracker';
 import ScholarshipList from './user/ApplicationTracker/ScholarshipList';
+import UserDashboard from './user/UserDashboard/UserDashboard';
+import EssayBuilder from './user/EssayBuilder/EssayBuilder';
 
 import CreateSponsorShip from './SponsorSide/CreateSponsorShip';
 import FundStudents from './SponsorSide/FundStudents';
@@ -76,6 +78,9 @@ function App() {
         <Route path='/aid-calculator' element={<ScholarshipCalculator />} />
         <Route path='/applicationTracker' element={<ApplicationTracker />} />
         <Route path='/appliedList' element={<ScholarshipList />} />
+        <Route path='/userdashboard' element={<UserDashboard />} />
+        <Route path='/essaybuilder' element={<EssayBuilder />} />
+
 
         <Route path='/create-scholarship' element={<CreateSponsorShip />} />
         <Route path='/fund-students' element={<FundStudents />} />

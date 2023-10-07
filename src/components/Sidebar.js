@@ -28,6 +28,8 @@ import PeopleIcon from '@mui/icons-material/People';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import ChecklistIcon from '@mui/icons-material/Checklist';
 import SchoolIcon from '@mui/icons-material/School';
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+
 //image
 import logo from "../login_signup/edfund.io.png"
 
@@ -146,15 +148,7 @@ export default function Sidebar({setUser}) {
 
                 {role === 'user' ? (
                   <ListItem className=''>
-                    <Link to="/community">
-                      <Button style={{ color: 'black' }}>
-                        <HomeIcon className='mr-3'/>Dashboard
-                      </Button>
-                    </Link>
-                  </ListItem>
-                ) : role === 'sponsor' ? (
-                  <ListItem className=''>
-                    <Link to="/community">
+                    <Link to="/userdashboard">
                       <Button style={{ color: 'black' }}>
                         <HomeIcon className='mr-3'/>Dashboard
                       </Button>
@@ -162,12 +156,12 @@ export default function Sidebar({setUser}) {
                   </ListItem>
                 ) : (
                   <ListItem className=''>
-                  <Link to="/community">
-                    <Button style={{ color: 'black' }}>
-                      <HomeIcon className='mr-3'/>Dashboard
-                    </Button>
-                  </Link>
-                </ListItem>
+                    <Link to="/community">
+                      <Button style={{ color: 'black' }}>
+                        <HomeIcon className='mr-3'/>Dashboard
+                      </Button>
+                    </Link>
+                  </ListItem>
                 )}
                 
                 <ListItem className=''>
@@ -255,6 +249,15 @@ export default function Sidebar({setUser}) {
                   </Link>
                 </ListItem>
 
+                <ListItem className="">
+                  <Link to="/essaybuilder">
+                    <Button style={{ color: "black" }}>
+                      <BorderColorIcon className="mr-3" />
+                      Essay Builder
+                    </Button>
+                  </Link>
+                </ListItem>
+
               </List>
             </div>
           );
@@ -286,37 +289,12 @@ export default function Sidebar({setUser}) {
                 </div>
             )
         }
-      };
-
-      const googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            autoDisplay: false
-          },
-          "google_translate_element"
-        );
-      };
-      useEffect(() => {
-        // Check if the script has already been loaded
-        if (!window.googleTranslateElementInit) {
-          var addScript = document.createElement("script");
-          addScript.setAttribute(
-            "src",
-            "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          );
-          document.body.appendChild(addScript);
-          window.googleTranslateElementInit = googleTranslateElementInit;
-        }
-      }, []);
-      
-      
-      
+      };      
 
   return (
     <div className='w-full shadow-lg'>
       <Box display="flex" justifyContent="space-between" p={2}>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center '>
                 <Button onClick={toggleDrawer(true)}>
                     <MenuIcon color='black'/>
                 </Button>
@@ -330,7 +308,6 @@ export default function Sidebar({setUser}) {
                 </Drawer>
                 <img src={logo} alt="intellihealth logo" className='h-[40px] w-[140px]'/>
 
-                <div id="google_translate_element"></div>
             </div>
 
             {/* ICONS */}

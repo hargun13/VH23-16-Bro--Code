@@ -17,8 +17,12 @@ const GovScehems = () => {
   useEffect(() => {
     if (enteredFilter === "National") {
       setFilteredData(data);
+    } else if (enteredFilter === null) {
+      setFilteredData(data);
     } else {
-      setFilteredData(data.filter((scheme) => scheme.state === enteredFilter));
+      setFilteredData(
+        data.filter((scheme) => scheme.ageCriteria === enteredFilter)
+      );
     }
   }, [enteredFilter]);
 
@@ -54,9 +58,18 @@ const GovScehems = () => {
               <p className="py-2 tracking-widest font-normal text-[#1b1b1b] w-full">
                 {schemeData.description}
               </p>
-              <p>Eligibilty Criteria: {schemeData.eligibility}</p>
-              <p>Deadine: {schemeData.applicationDeadline}</p>
-              <p>Sponsoring State: {schemeData.awardingAuthority}</p>
+              <p className="py-1">
+                <span className="font-semibold ">Eligibilty Criteria: </span>
+                {schemeData.eligibility}
+              </p>
+              <p className="py-1">
+                <span className="font-semibold">Deadine: </span>
+                {schemeData.applicationDeadline}
+              </p>
+              <p className="py-1">
+                <span className="font-semibold">Sponsoring State: </span>
+                {schemeData.awardingAuthority}
+              </p>
             </div>
 
             <a href={schemeData.link} target="_blank" rel="noreferrer">

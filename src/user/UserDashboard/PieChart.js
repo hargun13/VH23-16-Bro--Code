@@ -81,8 +81,8 @@ const PieChart = () => {
   };
 
   const containerStyle = {
-    width: "550px",
-    height: "300px",
+    width: "400px",
+    height: "350px",
   };
 
   return (
