@@ -1,17 +1,3 @@
-const link1 =
-  "https://img.freepik.com/free-vector/books-with-money-loans-scholarships_603843-826.jpg";
-const link2 =
-  "https://www.ssims.edu.in/wp-content/uploads/2020/03/ssit-students-scholarship-loans.jpg";
-const link3 =
-  "https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/06/types-of-scholarship-for-students.jpg";
-
-const link4 =
-  "https://cdn.siasat.com/wp-content/uploads/2021/11/photo_2021-11-16_16-10-08.jpg";
-const link5 =
-  "https://t4.ftcdn.net/jpg/01/96/87/57/360_F_196875700_4rLgO7QPC1lmtTny5VOceDY80DJasArn.jpg";
-const link6 =
-  "https://aisee.co.in/scholarship/wp-content/uploads/2019/07/Shri-Bipin-Bihari-Verma-Memorial-Scholarship.jpg";
-
 const scholarshipData = [
   {
     "": 0,
@@ -22,6 +8,7 @@ const scholarshipData = [
     date: "30 June 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 23,
   },
   {
     "": 1,
@@ -32,6 +19,7 @@ const scholarshipData = [
     date: "31 July 2022",
     location: "united-states",
     link: "https://kpi.ua/en/15-11-05",
+    enrolled: 60,
   },
   {
     "": 2,
@@ -42,6 +30,7 @@ const scholarshipData = [
     date: "22 December 2022",
     location: "united-states",
     link: "https://fatherprada.com/ongoing-scholarship/international-student-support-contest-2022-2023/",
+    enrolled: 105,
   },
   {
     "": 3,
@@ -52,6 +41,7 @@ const scholarshipData = [
     date: "15 September 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 20,
   },
   {
     "": 4,
@@ -62,6 +52,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-states",
     link: "https://www.oakwoodhealth.com/improve-mens-health-scholarship/",
+    enrolled: 78,
   },
   {
     "": 5,
@@ -73,6 +64,7 @@ const scholarshipData = [
     date: "1 July 2022",
     location: "united-states",
     link: "https://newstuck.com/3-month-f1-study-english-in-u-s-visa-scholarship-windsor/",
+    enrolled: 2,
   },
   {
     "": 6,
@@ -83,6 +75,7 @@ const scholarshipData = [
     date: "30 December 2022",
     location: "united-states",
     link: "https://www.artuniverse.org/",
+    enrolled: 29,
   },
   {
     "": 7,
@@ -93,6 +86,7 @@ const scholarshipData = [
     date: "1 December 2022",
     location: "united-states",
     link: "https://www.augsburg.edu/multicultural-life/scholarships/#:~:text=Augsburg's%20American%20Indian%20Recognition%20Full,students%20starting%20in%20Fall%202022.",
+    enrolled: 48,
   },
   {
     "": 8,
@@ -103,6 +97,7 @@ const scholarshipData = [
     date: "28 April 2023",
     location: "united-states",
     link: "https://www.opportunitiescircle.com/blog/top-competitions-for-international-students-youth/",
+    enrolled: 10,
   },
   {
     "": 9,
@@ -113,6 +108,7 @@ const scholarshipData = [
     date: "24 March 2027",
     location: "united-states",
     link: "https://www.scholars4dev.com/",
+    enrolled: 201,
   },
   {
     "": 10,
@@ -123,6 +119,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.rhsupplies.org/activities-resources/laptop/scholarships/",
+    enrolled: 55,
   },
   {
     "": 11,
@@ -134,6 +131,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 89,
   },
   {
     "": 12,
@@ -144,6 +142,7 @@ const scholarshipData = [
     date: "30 June 2023",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 83,
   },
   {
     "": 13,
@@ -154,6 +153,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 180,
   },
   {
     "": 14,
@@ -164,6 +164,7 @@ const scholarshipData = [
     date: "6 May 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 74,
   },
   {
     "": 15,
@@ -174,6 +175,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 94,
   },
   {
     "": 16,
@@ -185,6 +187,7 @@ const scholarshipData = [
     date: "31 May 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 122,
   },
   {
     "": 17,
@@ -196,6 +199,7 @@ const scholarshipData = [
     date: "31 August 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 63,
   },
   {
     "": 18,
@@ -206,6 +210,7 @@ const scholarshipData = [
     date: "29 June 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 94,
   },
   {
     "": 19,
@@ -217,6 +222,7 @@ const scholarshipData = [
     date: "10 June 2022",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 347,
   },
   {
     "": 20,
@@ -227,6 +233,7 @@ const scholarshipData = [
     date: "",
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+    enrolled: 453,
   },
 ];
 

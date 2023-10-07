@@ -36,15 +36,40 @@ const Filters = ({ onFilterChange }) => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Region-wise
+            Filters
           </Typography>
-          <select onChange={(e) => onFilterChange(e.target.value)}>
-            <option value="National">National</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Karnataka">Karnataka</option>
-            <option value="Maharashtra">Maharashtra</option>
-          </select>
+          <div className="flex justify-evenly">
+            <select onChange={(e) => onFilterChange(e.target.value)}>
+              <option value="National">National</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Maharashtra">Maharashtra</option>
+            </select>
+            <select
+              name=""
+              id=""
+              onChange={(e) => onFilterChange(e.target.value)}
+            >
+              <option value="null">none</option>
+              <option value="14">14</option>
+              <option value="16-17">16-17</option>
+              <option value="18">18</option>
+              <option value="18-20">19-20</option>
+              <option value="20-25">20-25</option>
+              <option value="25-30">25-30</option>
+            </select>
+
+            <select
+              name=""
+              id=""
+              onChange={(e) => onFilterChange(e.target.value)}
+            >
+              <option value="null">none</option>
+              <option value="disability">disability</option>
+              <option value="minority">minority</option>
+            </select>
+          </div>
         </Box>
       </Modal>
     </div>

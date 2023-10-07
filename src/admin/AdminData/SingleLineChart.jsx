@@ -26,7 +26,7 @@ const SingleLineChart = () => {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
     datasets: [
       {
-        label: "Living Donors",
+        label: "Scholarship Fund",
         data: [14, 10, 8, 7, 6, 4, 8, 23],
         borderColor: "rgba(225, 23, 255, 1)",
         backgroundColor: "rgba(225, 23, 255, 0.2)",
@@ -39,7 +39,7 @@ const SingleLineChart = () => {
     plugins: {
       title: {
         display: true,
-        text: "Transplant this year",
+        text: "Funds donated",
         padding: {
           top: 10,
           bottom: 10,

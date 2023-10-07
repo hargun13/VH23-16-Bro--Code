@@ -26,7 +26,7 @@ const GroupedChart = () => {
     labels: years.map((year) => year.toString()),
     datasets: [
       {
-        label: "Liver Centres",
+        label: "User Logins",
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
@@ -34,7 +34,7 @@ const GroupedChart = () => {
         barPercentage: 0.2,
       },
       {
-        label: "Kidney Centres",
+        label: "User Registrations",
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
@@ -42,27 +42,11 @@ const GroupedChart = () => {
         barPercentage: 0.2,
       },
       {
-        label: "Heart Centres",
+        label: "Avg Session Duration",
         backgroundColor: "rgba(75, 255, 67, 0.2)",
         borderColor: "rgba(75, 255, 67, 1)",
         borderWidth: 1,
         data: [39, 59, 78, 94, 125, 153, 121, 189],
-        barPercentage: 0.2,
-      },
-      {
-        label: "Lung Centres",
-        backgroundColor: "rgba(225, 23, 255, 0.2)",
-        borderColor: "rgba(225, 23, 255, 1)",
-        borderWidth: 1,
-        data: [19, 35, 48, 45, 55, 84, 47, 115],
-        barPercentage: 0.2,
-      },
-      {
-        label: "Pancreas Centres",
-        backgroundColor: "rgba(13, 23, 135, 0.2)",
-        borderColor: "rgba(13, 23, 135, 1)",
-        borderWidth: 1,
-        data: [20, 24, 39, 43, 49, 74, 65, 119],
         barPercentage: 0.2,
       },
     ],
@@ -86,7 +70,7 @@ const GroupedChart = () => {
     plugins: {
       title: {
         display: true,
-        text: "Number of Transplant Centres from 2014-2021",
+        text: "User Engagement Trend",
 
         padding: {
           top: 10,
