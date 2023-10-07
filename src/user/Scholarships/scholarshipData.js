@@ -8,7 +8,11 @@ const scholarshipData = [
     date: "30 June 2022",
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
+
     enrolled: 23,
+
+    applied: true,
+
   },
   {
     "": 1,
@@ -19,7 +23,11 @@ const scholarshipData = [
     date: "31 July 2022",
     location: "united-states",
     link: "https://kpi.ua/en/15-11-05",
+
     enrolled: 60,
+
+    applied: false,
+
   },
   {
     "": 2,
@@ -30,7 +38,11 @@ const scholarshipData = [
     date: "22 December 2022",
     location: "united-states",
     link: "https://fatherprada.com/ongoing-scholarship/international-student-support-contest-2022-2023/",
+
     enrolled: 105,
+
+    applied: false,
+
   },
   {
     "": 3,
@@ -42,6 +54,8 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 20,
+    applied: false,
+
   },
   {
     "": 4,
@@ -53,6 +67,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.oakwoodhealth.com/improve-mens-health-scholarship/",
     enrolled: 78,
+    applied: false,
   },
   {
     "": 5,
@@ -65,6 +80,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://newstuck.com/3-month-f1-study-english-in-u-s-visa-scholarship-windsor/",
     enrolled: 2,
+    applied: false,
   },
   {
     "": 6,
@@ -76,6 +92,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.artuniverse.org/",
     enrolled: 29,
+    applied: true,
   },
   {
     "": 7,
@@ -87,6 +104,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.augsburg.edu/multicultural-life/scholarships/#:~:text=Augsburg's%20American%20Indian%20Recognition%20Full,students%20starting%20in%20Fall%202022.",
     enrolled: 48,
+    applied: false,
   },
   {
     "": 8,
@@ -98,6 +116,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.opportunitiescircle.com/blog/top-competitions-for-international-students-youth/",
     enrolled: 10,
+    applied: false,
   },
   {
     "": 9,
@@ -109,6 +128,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.scholars4dev.com/",
     enrolled: 201,
+    applied: false,
   },
   {
     "": 10,
@@ -120,6 +140,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.rhsupplies.org/activities-resources/laptop/scholarships/",
     enrolled: 55,
+    applied: false,
   },
   {
     "": 11,
@@ -132,6 +153,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 89,
+    applied: false,
   },
   {
     "": 12,
@@ -143,6 +165,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 83,
+    applied: true,
   },
   {
     "": 13,
@@ -154,6 +177,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 180,
+    applied: false,
   },
   {
     "": 14,
@@ -165,6 +189,7 @@ const scholarshipData = [
     location: "united-states",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 74,
+    applied: false,
   },
   {
     "": 15,
@@ -176,6 +201,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 94,
+    applied: false,
   },
   {
     "": 16,
@@ -188,6 +214,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 122,
+    applied: false,
   },
   {
     "": 17,
@@ -200,6 +227,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 63,
+    applied: false,
   },
   {
     "": 18,
@@ -211,6 +239,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 94,
+    applied: false,
   },
   {
     "": 19,
@@ -223,6 +252,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 347,
+    applied: false,
   },
   {
     "": 20,
@@ -234,6 +264,7 @@ const scholarshipData = [
     location: "united-kingdom",
     link: "https://www.schaeferhalleen.com/social-equity-scholarship/",
     enrolled: 453,
+    applied: false,
   },
 ];
 

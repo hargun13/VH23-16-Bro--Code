@@ -38,7 +38,8 @@ const GovScehems = () => {
     <div>
       <div className="flex justify-evenly items-center pt-10">
         <p className="text-4xl px-10">Stay Ahead: Access Government Schemes</p>
-        <Filters onFilterChange={onFilterChange} />
+        <Filters onFilterChange={onFilterChange}/>
+        
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-5">
         {filteredData.slice(0, visibleItems).map((schemeData, index) => (

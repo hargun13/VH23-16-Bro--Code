@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { updateDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase';
 
-const VerificationCard = ({ donorId, requestId, age, blood, authStatus }) => {
+const VerificationCard = ({ donorId, income, deadline, fulltime, authStatus }) => {
   const [verified, setVerified] = useState(false);
 
   async function verifyRequest() {
     try {
       // Update the authentication status in the request document to true.
-      const requestDocRef = doc(db, 'Donors', donorId, 'Requests', requestId);
+      const requestDocRef = doc(db, 'PrivateSponsor', donorId);
       await updateDoc(requestDocRef, { auth: true });
 
       // Update the local state to indicate verification.
       setVerified(true);
-      console.log('Request verified successfully:', requestId);
+      console.log('Request verified successfully:', income);
     } catch (error) {
       console.error('Error verifying request:', error);
     }
@@ -23,13 +23,16 @@ const VerificationCard = ({ donorId, requestId, age, blood, authStatus }) => {
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-5">
       <div className="flex flex-col items-center py-10">
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-          Donor ID: {donorId}
+          Sponsor ID: {donorId}
         </h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Age: {age}
+          Deadline: {deadline}
         </span>
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Blood Type: {blood}
+          Full Time?: {fulltime}
+        </span>
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          Income Status: {income}
         </span>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Authentication Status: {authStatus ? 'Authenticated' : 'Not Authenticated'}
