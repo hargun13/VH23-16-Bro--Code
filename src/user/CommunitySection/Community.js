@@ -1,11 +1,14 @@
+
 import React from 'react'
 import Post from './Post'
 import TrendingSec from './TrendingSec'
 import DefaultModal from '../../components/DefaultModal'
 
+
 const Community = () => {
   return (
     <>
+
     <DefaultModal />
     <div className='flex items-start justify-center w-full h-full px-3 gap-2'>
       
@@ -19,13 +22,21 @@ const Community = () => {
           <Post />
           <Post />
           <Post />
+
+        </div>
+
+        <div className="w-[50%] h-full">
+          <div className="border-b text-3xl w-full p-5 shadow-lg">
+            In the News
+          </div>
+          <TrendingSec />
         </div>
       </div>
+    </>
+  );
+};
 
-      <div className='w-[50%] h-full'>
-        <div className='border-b text-3xl w-full p-5 shadow-lg'>In the News</div>
-        <TrendingSec />
-      </div>
+
 
     </div>
     </>
@@ -33,3 +44,4 @@ const Community = () => {
 }
 
 export default Community
+

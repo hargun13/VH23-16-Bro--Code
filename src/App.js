@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {Routes, Route} from 'react-router-dom'
-import { AuthContextProvider } from './FirebaseAuthContext/AuthContext';
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import { AuthContextProvider } from "./FirebaseAuthContext/AuthContext";
+
 
 import Sidebar from './components/Sidebar';
 import Login from './login_signup/Login';
@@ -27,6 +28,7 @@ import FundStudents from './SponsorSide/FundStudents';
 
 import Analytics from './admin/Analytics';
 import Verification from './admin/Verification';
+
 
 
 const Chat = ({setUser}) => {
@@ -56,11 +58,15 @@ const Chat = ({setUser}) => {
 
 function App() {
   const [user, setUser] = useState(false);
-  useEffect(()=>{}, [user]);
+
+  useEffect(() => {}, [user]);
+
+
 
   return (
     <div className=" h-full w-full scrollbar-hide">
       <AuthContextProvider>
+
       {user && <Sidebar setUser={setUser} />}
       <Routes>
         <Route path='/login' element={<Login setUser={setUser}/>} />
@@ -90,10 +96,13 @@ function App() {
         <Route path='/analytics' element={<Analytics />} />
         <Route path='/verification' element={<Verification />} />
 
-        <Route path='/live-session' element={<VideoCall />} />
+
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/verification" element={<Verification />} />
 
       </Routes>
       {user && <Chat setUser={setUser} />}
+
       </AuthContextProvider>
     </div>
   );

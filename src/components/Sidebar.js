@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { Box, IconButton} from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { Box, IconButton } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 //icons
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -30,43 +31,41 @@ import ChecklistIcon from '@mui/icons-material/Checklist';
 import SchoolIcon from '@mui/icons-material/School';
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 
-//image
-import logo from "../login_signup/edfund.io.png"
 
-import { UserAuth } from '../FirebaseAuthContext/AuthContext';
+//image
+import logo from "../login_signup/edfund.io.png";
+
+import { UserAuth } from "../FirebaseAuthContext/AuthContext";
 // import Popup from 'reactjs-popup'
 import SpeechRecognition, {
-    useSpeechRecognition,
-  } from "react-speech-recognition";
+  useSpeechRecognition,
+} from "react-speech-recognition";
 
 // import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import { useRoleContext } from '../login_signup/roleContext'
+import Modal from "@mui/material/Modal";
+import { useRoleContext } from "../login_signup/roleContext";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 500,
-  bgcolor: '#15181C',
-  border: '1px solid ',
+  bgcolor: "#15181C",
+  border: "1px solid ",
   boxShadow: 24,
   borderRadius: 10,
-  color:'white',
+  color: "white",
   px: 4,
-  py: 5
+  py: 5,
 };
 
-
-
-
-export default function Sidebar({setUser}) {
+export default function Sidebar({ setUser }) {
   const navigate = useNavigate();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const {role} = useRoleContext();
+  const { role } = useRoleContext();
 
   const toggleDrawer = (open) => () => {
     setIsDrawerOpen(open);
@@ -79,30 +78,29 @@ export default function Sidebar({setUser}) {
     setAnchorEl(null);
   };
 
-  const {logout} = UserAuth()
-  const [error, setError] = useState()
+  const { logout } = UserAuth();
+  const [error, setError] = useState();
 
   const handleLogout = async (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
     try {
-        await logout();
-        setUser(false)
-        setAnchorEl(null);
-        navigate('/login')
-      } 
-      catch (e) {
-        setError(e.message);
-        console.log(error);
-      }
-
-  }
+      await logout();
+      setUser(false);
+      setAnchorEl(null);
+      navigate("/login");
+    } catch (e) {
+      setError(e.message);
+      console.log(error);
+    }
+  };
 
   const [open, setOpen] = useState(false);
   const handleVoiceNavOpen = () => setOpen(true);
   const handleVoiceNavClose = () => setOpen(false);
 
   const [redirectUrl, setRedirectUrl] = useState("");
+
     const commands = [
         {
         command: ["Go to * page", "Go to *", "Open * page", "Open *"],
@@ -168,9 +166,12 @@ export default function Sidebar({setUser}) {
                   <Link to="/community">
                     <Button style={{ color: 'black' }}>
                       <PeopleIcon className='mr-3'/>Community
+
                     </Button>
                   </Link>
                 </ListItem>
+
+
 
                 {role === 'user' ? (
                   <div>
@@ -237,17 +238,20 @@ export default function Sidebar({setUser}) {
                   <Link to="/schemes">   
                     <Button style={{ color: 'black' }}>
                       <GavelIcon className='mr-3'/>Gov. Schemes
+
                     </Button>
                   </Link>
                 </ListItem>
 
-                <ListItem className=''>
-                  <Link to="/fundraiser">   
-                    <Button style={{ color: 'black' }}>
-                      <VolunteerActivismIcon className='mr-3'/>Fundraiser
+                <ListItem className="">
+                  <Link to="/scholarships">
+                    <Button style={{ color: "black" }}>
+                      <AccountBalanceIcon className="mr-3" />
+                      Scholarships
                     </Button>
                   </Link>
                 </ListItem>
+
 
                 <ListItem className="">
                   <Link to="/essaybuilder">
@@ -291,9 +295,11 @@ export default function Sidebar({setUser}) {
         }
       };      
 
+
   return (
-    <div className='w-full shadow-lg'>
+    <div className="w-full shadow-lg">
       <Box display="flex" justifyContent="space-between" p={2}>
+
             <div className='flex items-center justify-center '>
                 <Button onClick={toggleDrawer(true)}>
                     <MenuIcon color='black'/>
@@ -373,10 +379,40 @@ export default function Sidebar({setUser}) {
                         <MenuItem onClick={handleClose}>My Account</MenuItem>
                         <MenuItem onClick={handleLogout}>Logout</MenuItem>
                     </Menu>
+
                 </div>
-                
-            </Box>
+              </Box>
+            </Modal>
+          </Box>
+
+          <IconButton>
+            <NotificationsOutlinedIcon />
+          </IconButton>
+
+          <IconButton>
+            <SettingsOutlinedIcon />
+          </IconButton>
+
+          {/* Profile dropdown */}
+          <div>
+            <IconButton onClick={handleClick}>
+              <PersonOutlinedIcon />
+            </IconButton>
+
+            <Menu
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <Link to="/patientprofile">
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+              </Link>
+              <MenuItem onClick={handleClose}>My Account</MenuItem>
+              <MenuItem onClick={handleLogout}>Logout</MenuItem>
+            </Menu>
+          </div>
         </Box>
+      </Box>
     </div>
   );
 }

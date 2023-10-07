@@ -4,7 +4,9 @@ import "react-quill/dist/quill.snow.css";
 import ReactToPdf from "react-to-pdf";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+
 import Button from '@mui/material/Button';
+
 
 const generatePDF = async (content) => {
   const canvas = await html2canvas(content);
@@ -34,6 +36,7 @@ const EssayBuilder = () => {
 
   return (
     <div>
+
       <h1 className="text-4xl font-semibold p-10 bg-blue-200 mb-5">Essay Builder</h1>
       <div className="p-10">
         <ReactQuill theme="snow" value={value} onChange={setValue} />
@@ -42,6 +45,7 @@ const EssayBuilder = () => {
           {/* Content to be converted to PDF */}
           <div dangerouslySetInnerHTML={{ __html: value }} />
         </div>
+
       </div>
     </div>
   );

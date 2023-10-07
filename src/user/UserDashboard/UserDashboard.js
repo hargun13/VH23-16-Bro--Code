@@ -35,6 +35,7 @@ const UserDashboard = () => {
   ];
   return (
     <div className="h-screen bg-[#f0f3fc] ">
+
       <div className=" py-5 flex justify-evenly h-2/3 w-full gap-5 px-5">
         <div className="w-1/3 h-full shadow-xl bg-white">
           <DoughnutChart />
@@ -43,11 +44,14 @@ const UserDashboard = () => {
           <Recent />
         </div>
         <div className="w-1/3 h-full p-2 shadow-xl bg-white">
+
           <Notifications />
         </div>
       </div>
 
+
       <div className="bg-inherit h-1/3 text-black mx-5 my-2 p-3">
+
         <h1 className="text-lg font-bold">Applied Scholarships</h1>
         <ul className="overflow-y-scroll h-full  ">
           {appliedScholarships.map((application) => {
